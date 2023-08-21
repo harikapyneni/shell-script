@@ -8,5 +8,5 @@ STUDENT2="anusha"
 STUDENT3="apple"
 STUDENT4="dayansh"
 
-echo -e " my Student is : ${R,STUDENT[2]}"
+echo -e " my Student is : $R $STUDENT2 "
 
