@@ -7,7 +7,7 @@ VALIDATE()
 
 # $1 --> it will recieve the first argument
 
-    if[ $1 -ne 0 ]
+    if [ $1 -ne 0 ]
     then
         echo "$2 ... FAILURE"
         exit 1
