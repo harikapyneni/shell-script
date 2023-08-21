@@ -1,7 +1,7 @@
 #! /bin/bash
 
-R="\e[31m"
-V="\e[35m"
+R="\e[31m]"
+V="\e[35m]"
 
 STUDENT1="harika"
 STUDENT2="anusha"
