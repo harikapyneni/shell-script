@@ -9,4 +9,4 @@ STUDENT3="apple"
 STUDENT4="dayansh"
 
 echo -e "My Student is : $R $STUDENT2 "
-echo -e "my Fav Student is: $V $STUDENT3 $STUDENT4 "
+echo -e "My Fav Student is: $V $STUDENT3 $STUDENT4 "
