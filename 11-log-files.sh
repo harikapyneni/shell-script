@@ -3,9 +3,9 @@
 DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/SCRIPT_NAME-DATE.log
-USERID=$(id -u)
 
 # $1 --> it will recieve the first argument
+
 VALIDATE()
 {
     if [ $1 -ne 0 ]
@@ -16,6 +16,8 @@ VALIDATE()
         echo "$2 ... SUCCESS"
     fi
 }  
+
+USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then
