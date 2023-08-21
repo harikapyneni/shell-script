@@ -3,8 +3,7 @@
 R="\e[31m"
 V="\e[35m"
 
+STUDENTS_NAMES="harika""anusha""apple""dayansh"
 
-STUDENTS=("harika" "anusha" "apple" "dayansh")
-
-echo -e "first Student : $R ${STUDENT[3]}"
+echo -e " my Student is : $R $STUDENT[2]"
 
