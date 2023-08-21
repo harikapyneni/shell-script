@@ -6,5 +6,5 @@ V="\e[35m"
 
 STUDENT=("harika""anusha""apple""dayansh")
 
-echo "first Student : $R$STUDENT[0]"
+echo -e "first Student : $R$STUDENT[0]"
 
