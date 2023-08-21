@@ -4,5 +4,5 @@ R="\e[31m"
 G="\e[32m"
 PERSONS=("EDDIE" "JOHN" "ROBERT")
 
-echo "First Person:$R ${PERSONS[0]}"
-echo "all Persons :$G ${PERSONS[@]}"
+echo -e "First Person:$R ${PERSONS[0]}"
+echo -e "all Persons :$G ${PERSONS[@]}"
