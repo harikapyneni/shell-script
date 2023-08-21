@@ -5,5 +5,5 @@ V="\e[35m"
 
 STUDENTS_NAME="harika""anusha""apple""dayansh"
 
-echo -e " my Student is : $R $STUDENT_NAME[2]"
+echo -e " my Student is : $R ${STUDENT_NAME[2]}"
 
