@@ -49,5 +49,5 @@ do
     else
       echo -e "$Y $i is already installed $N"
     fi
-        yum install $i -y
+# yum install $i -y
 done
