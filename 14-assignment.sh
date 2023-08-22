@@ -4,7 +4,7 @@
 DATE=$(date +%F)
 LOGDIR=/home/centos/shell-script/shellscript-logs/script_name-date.log
 SCRIPT_NAME=$0
-LOGFILE=$LOGDIR/$0-$DATE.log
+$LOGFILE=$LOGDIR/$0-$DATE.log
 
 #color codes
 R="\e[31m"
