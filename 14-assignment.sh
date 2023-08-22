@@ -2,9 +2,9 @@
 
 # logs Validation script
 DATE=$(date +%F)
-LOGDIR=/home/centos/shell-script/shellscript-logs/script-name-date.log
+LOGSDIR=/home/centos/shell-script/shellscript-logs/script-name-date.log
 SCRIPT_NAME=$0
-LOGFILE=$LOGDIR/$0-$DATE.log
+LOGFILE=$LOGSDIR/$0-$DATE.log
 
 #color codes
 R="\e[31m"
