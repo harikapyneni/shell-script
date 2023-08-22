@@ -9,10 +9,10 @@ LOGFILE=$LOGSDIR/$SCRIPT_NAME-$DATE.log
 
 FILES_TO_DELETE=$(find $APP_LOGSDIR -name "*.log" -type f -mtime +14)
 
-echo "Scripts started executing at $DATE" &>>$LOGSDIR
+echo "Scripts started executing at $DATE" &>>$LOGFILE
 
 while read line
 do
-    echo "Deleting $LINE" &>>$LOGSDIR
+    echo "Deleting $LINE" &>>$LOGFILE
     rm -rf $LINE
 done <<< $FILES_TO_DELETE
