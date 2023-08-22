@@ -4,7 +4,7 @@
 DATE=$(date +%F)
 LOGDIR=/home/centos/shell-script/shellscript-logs/script_name-date.log
 SCRIPT_NAME=$0
-$LOGFILE=$LOGDIR/$0-$DATE.log
+LOGFILE=$LOGDIR/$0-$DATE.log
 
 #color codes
 R="\e[31m"
@@ -29,6 +29,7 @@ VALIDATE()
     if [ $1 -ne 0 ]
     then 
         echo -e "$2 installing...$R FAILURE $N"
+        exit 1
     else
         echo -e "$2 installing...$G SUCCESS $N"
     fi
