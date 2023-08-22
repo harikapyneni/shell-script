@@ -2,7 +2,7 @@
 
 # logs Validation script
 DATE=$(date +%F)
-LOGSDIR=/home/centos/shellscript-logs/script-name-date.log
+LOGSDIR=/home/centos/shellscript-logs
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$0-$DATE.log
 
@@ -44,7 +44,6 @@ do
     if [ $? -ne 0 ]
     then 
         echo "$i is not Installed,Let's Install it!"
-        
         yum install $i -y &>>$LOGFILE
         VALIDATE $? "$i" 
     else
