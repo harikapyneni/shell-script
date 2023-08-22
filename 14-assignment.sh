@@ -17,7 +17,7 @@ USERID=$(id -u)
 
 if [ $USERID -ne 0 ]
 then 
-    echo "$R ERROR :: Please do install this with a root user $N"
+    echo -e "$R ERROR :: Please do install this with a root user $N"
     exit 1
 #else
 #   echo "INFO :: You are a root user"    
@@ -28,9 +28,9 @@ VALIDATE()
 {    
     if [ $1 -ne 0 ]
     then 
-        echo "$2 installing...$R FAILURE $N"
+        echo -e "$2 installing...$R FAILURE $N"
     else
-        echo "$2 installing...$G SUCCESS $N"
+        echo -e "$2 installing...$G SUCCESS $N"
     fi
 }
 
