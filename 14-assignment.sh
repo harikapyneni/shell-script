@@ -2,7 +2,7 @@
 
 # logs Validation script
 DATE=$(date +%F)
-LOGSDIR=/home/centos/shell-script/shellscript-logs/script-name-date.log
+LOGSDIR=/home/centos/shellscript-logs/script-name-date.log
 SCRIPT_NAME=$0
 LOGFILE=$LOGSDIR/$0-$DATE.log
 
