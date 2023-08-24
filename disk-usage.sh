@@ -14,7 +14,7 @@ Y="\e[33m"
 
 DISK_USAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
 DISK_USAGE_THRESHOLD=1
-message=""
+MESSAGE=""
 
 while IFS= read line
 do
@@ -25,13 +25,13 @@ do
     #now you need to check whether usage is more than threshold or not
     if [ $USAGE -gt $DISK_USAGE_THRESHOLD ];
     then
-        message+="HIGH DISK USAGE on $PARTITION: $USAGE"
+        MESSAGE+="HIGH DISK USAGE on $PARTITION: $USAGE"
     fi
 done <<< $DISK_USAGE
 
-echo -e "message: $message"
+echo -e "message: $MESSAGE"
 
 #echo "$message | mail -s "High Disk Usage" info@joindevops.com
 #how to call other shellscript from your current script - by using sh 
 
-sh mail.sh harika.paineni@gmail.com "High Disk Usage" "$message" "Devops Team" "HIGH DISK USAGE"
+sh mail.sh harika.paineni@gmail.com "High Disk Usage" "$MESSAGE" "Devops Team" "HIGH DISK USAGE"
