@@ -36,7 +36,7 @@ echo -e "message: $message"
 #how to call other shellscript from your current script - by using sh 
 
 
-sh mail.sh snehapyneni@gmail.com "High Disk Usage" "$message" "Devops Team" "HIGH DISK USAGE"
+sh mail.sh harika.paineni@gmail.com "High Disk Usage" "$message" "Devops Team" "HIGH DISK USAGE"
 
 
 
