@@ -30,7 +30,7 @@ do
     fi
 done <<< $DISK_USAGE
 
-echo -e "message: $message"
+echo -e "message: $MESSAGE"
 
 #echo "$message | mail -s "High Disk Usage" info@joindevops.com
 #how to call other shellscript from your current script - by using sh 
