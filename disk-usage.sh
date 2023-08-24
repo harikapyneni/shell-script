@@ -14,7 +14,7 @@ Y="\e[33m"
 
 DISK_USAGE=$(df -hT | grep -vE 'tmpfs|Filesystem')
 DISK_USAGE_THRESHOLD=1
-MESSAGE=""
+message=""
 
 while IFS= read line
 do
@@ -34,4 +34,4 @@ echo -e "message: $MESSAGE"
 #echo "$message | mail -s "High Disk Usage" info@joindevops.com
 #how to call other shellscript from your current script - by using sh 
 
-sh mail.sh harika.paineni@gmail.com "High Disk Usage" "$MESSAGE" "Devops Team" "HIGH DISK USAGE"
+sh mail.sh harika.paineni@gmail.com "High Disk Usage" "$message" "Devops Team" "HIGH DISK USAGE"
