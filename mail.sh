@@ -1,8 +1,8 @@
 #! /bin/bash
 
 #anyone in our project can call the script with arguments
-#write a script to send an email ALERT for High Disk Usage through linux, 
-#i already setup an email service in my remote server.
+#write a script to send an email ALERT for High Disk Usage through linux
+#i already setup an email service in my remote server
 
 TO_ADDRESS=$1
 SUBJECT=$2
