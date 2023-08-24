@@ -38,7 +38,3 @@ echo -e "message: $MESSAGE"
 
 
 sh mail.sh harika.paineni@gmail.com "High Disk Usage" "$MESSAGE" "Devops Team" "HIGH DISK USAGE"
-
-
-
-
