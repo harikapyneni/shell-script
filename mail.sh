@@ -18,4 +18,4 @@ ALERT_TYPE=$5
 
 FINAL_BODY=$(sed -e 's/TEAM_NAME/Devops/g' -e 's/ALERT_TYPE/High Disk Usage/g' -e "s/MESSAGE/$BODY/g" template.html)
 
-echo "$BODY" | mail -s "$SUBJECT" $TO_ADDRESS
+echo "$BODY | mail -s "$SUBJECT" $TO_ADDRESS"
