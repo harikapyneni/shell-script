@@ -18,15 +18,15 @@ DISK_USAGE_THRESHOLD=1
 while IFS= read line
 do
     #this command will give you usage in number format for comparison
-    USAGE=$(echo $line | awk '{print $6}' | cut -d % -f1)
+    usage=$(echo $line | awk '{print $6}' | cut -d % -f1)
 
     #this command will give us the partition
-    PARTITION=$(echo $line | awk '{print $1}')
+    partition=$(echo $line | awk '{print $1}')
 
     #now you need to check whether usage is more than threshold or not
     if [ $USAGE -gt $DISK_USAGE_THRESHOLD ];
     then
-        MESSAGE+="HIGH DISK USAGE on $PARTITION: $USAGE\n"
+        MESSAGE+="HIGH DISK USAGE on $PARTITION: $USAGE"
     fi
 done <<< $DISK_USAGE
 
