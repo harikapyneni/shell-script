@@ -25,11 +25,11 @@ do
     #now you need to check whether usage is more than threshold or not
     if [ $USAGE -gt $DISK_USAGE_THRESHOLD ];
     then
-        message+="HIGH DISK USAGE on $PARTITION: \n$USAGE"
+        message+="HIGH DISK USAGE on $PARTITION: $USAGE\n"
     fi
 done <<< $DISK_USAGE
 
-echo -e "message: $MESSAGE"
+echo -e "message: $message"
 
 #echo "$message | mail -s "High Disk Usage" info@joindevops.com
 #how to call other shellscript from your current script - by using sh 
