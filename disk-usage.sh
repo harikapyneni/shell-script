@@ -3,7 +3,7 @@
 #validations,colors,log redirections
 
 LOGFILE_DIRCTORY=/tmp
-DATE=$(date =%F:%H:%M:%S)
+DATE=$(date +%F:%H:%M:%S)
 SCRIPT_NAME=$0
 LOGFILE=$LOGFILE_DIRCTORY/$SCRIPT_NAME-$DATE.log
 
